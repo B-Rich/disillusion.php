@@ -29,6 +29,9 @@ function expectation () {
 // will compare the provided parameters with the last expectation. If no previous expectation could be found or if the 
 // reality's parameters doesn't match expectation, returns false and displays a message. Otherwise, returns true.
 function reality () {
+    if (!func_num_args())
+        return true;
+
     // fetch current script line and arguments
     $args = func_get_args();
     $bt   = debug_backtrace();
@@ -52,7 +55,8 @@ function reality () {
     foreach ($args as $offset => $arg) {
         // if such argument doesn't exists or differ from expectation
         if (!isset($expectation['args'][$offset]) || $expectation['args'][$offset] != $arg) {
-            echo "Reality defined at line {$line} doesn't match expectation from line {$expectation['line']}\n";
+            echo "Reality defined at line {$line} doesn't match expectation from line {$expectation['line']}",
+                 (PHP_SAPI == 'cli' ? "\n" : "<br />");
             return false;
         }
     }
