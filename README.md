@@ -16,4 +16,4 @@ Expectation and reality are the core concept in any testing framework regardless
 + expectation($anything)
 + reality($anything)
 
-You may call them, stack them, pass them function; whatever floats your boat. Give it a try by cloning the project and run the demo.php script.
+You may call them, stack them, pass them function; whatever floats your boat. Give it a try by cloning the project and run the [demo.php](http://bdelespierre.github.io/disillusion.php/) script or check out [how it's done](http://bdelespierre.github.io/disillusion.php/docs/disillusion.html).
