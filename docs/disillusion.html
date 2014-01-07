@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>disillusion.php</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>disillusion.php</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="preprocessor">&lt;?php</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p><strong>expectation</strong>
+will record the parameters passed along on the expectations stack. When called without parameters, will pop the last
+expectation from the stack.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="function"><span class="keyword">function</span> <span class="title">expectation</span> <span class="params">()</span> {</span>
+    <span class="keyword">static</span> <span class="variable">$stack</span> = <span class="keyword">array</span>();</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>no parameters ? return the last expectation</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="keyword">if</span> (!func_num_args())
+        <span class="keyword">return</span> array_pop(<span class="variable">$stack</span>);</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <p>fetch current script line and arguments</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="variable">$args</span> = func_get_args();
+    <span class="variable">$bt</span>   = debug_backtrace();
+    <span class="variable">$line</span> = <span class="variable">$bt</span>[<span class="number">0</span>][<span class="string">'line'</span>];</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <p>any function passed along ? call them !</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    array_walk(<span class="variable">$args</span>, <span class="function"><span class="keyword">function</span> <span class="params">(&amp; <span class="variable">$item</span>)</span> {</span>
+        is_callable(<span class="variable">$item</span>) &amp;&amp; <span class="variable">$item</span> = <span class="variable">$item</span>();
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <p>stack it</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="variable">$stack</span>[] = compact(<span class="string">'line'</span>, <span class="string">'args'</span>);
+    <span class="keyword">return</span> <span class="keyword">true</span>;
+}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p><strong>reality</strong>
+will compare the provided parameters with the last expectation. If no previous expectation could be found or if the 
+reality&#39;s parameters doesn&#39;t match expectation, returns false and displays a message. Otherwise, returns true.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="function"><span class="keyword">function</span> <span class="title">reality</span> <span class="params">()</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <p>fetch current script line and arguments</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="variable">$args</span> = func_get_args();
+    <span class="variable">$bt</span>   = debug_backtrace();
+    <span class="variable">$line</span> = <span class="variable">$bt</span>[<span class="number">0</span>][<span class="string">'line'</span>];</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <p>any function passed along ? call them !</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    array_walk(<span class="variable">$args</span>, <span class="function"><span class="keyword">function</span> <span class="params">(&amp; <span class="variable">$item</span>)</span> {</span>
+        is_callable(<span class="variable">$item</span>) &amp;&amp; <span class="variable">$item</span> = <span class="variable">$item</span>();
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-10">&#182;</a>
+              </div>
+              <p>fetch the last expectation</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="variable">$expectation</span> = expectation();</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-11">&#182;</a>
+              </div>
+              <p>if there&#39;s nothing to expect</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="keyword">if</span> (<span class="keyword">empty</span>(<span class="variable">$expectation</span>)) {
+        <span class="keyword">echo</span> <span class="string">"Nothing is expected at line {$line}\n"</span>;
+        <span class="keyword">return</span> <span class="keyword">false</span>;
+    }</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-12">&#182;</a>
+              </div>
+              <p>compare argument by argument</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="keyword">foreach</span> (<span class="variable">$args</span> <span class="keyword">as</span> <span class="variable">$offset</span> =&gt; <span class="variable">$arg</span>) {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-13">&#182;</a>
+              </div>
+              <p>if such argument doesn&#39;t exists or differ from expectation</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        <span class="keyword">if</span> (!<span class="keyword">isset</span>(<span class="variable">$expectation</span>[<span class="string">'args'</span>][<span class="variable">$offset</span>]) || <span class="variable">$expectation</span>[<span class="string">'args'</span>][<span class="variable">$offset</span>] != <span class="variable">$arg</span>) {
+            <span class="keyword">echo</span> <span class="string">"Reality defined at line {$line} doesn't match expectation from line {$expectation['line']}\n"</span>;
+            <span class="keyword">return</span> <span class="keyword">false</span>;
+        }
+    }
+
+    <span class="keyword">return</span> <span class="keyword">true</span>;
+}</pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>

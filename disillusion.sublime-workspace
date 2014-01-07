@@ -1,0 +1,479 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"prev",
+				"previous_state"
+			],
+			[
+				"under",
+				"underscore_class"
+			],
+			[
+				"Strea",
+				"StreamAdapter"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 296.0,
+		"selected_items":
+		[
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"file",
+				"File: Close All"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"comme",
+				"Toggle Comment"
+			],
+			[
+				"proj",
+				"Project: Close"
+			],
+			[
+				"projec",
+				"Project: Close"
+			],
+			[
+				"toggle",
+				"View: Toggle Minimap"
+			],
+			[
+				"toggle ",
+				"View: Toggle Side Bar"
+			],
+			[
+				"toggle mi",
+				"View: Toggle Minimap"
+			],
+			[
+				"pro",
+				"Project: Close"
+			],
+			[
+				"ssyn php",
+				"Set Syntax: PHP"
+			],
+			[
+				"ssyn diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ssyn html",
+				"Set Syntax: HTML"
+			],
+			[
+				"comb",
+				"Sort via CSScomb"
+			],
+			[
+				"cssc",
+				"Sort via CSScomb"
+			],
+			[
+				"ssyn css",
+				"Set Syntax: CSS"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"ssyn htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"settings",
+				"Preferences: Settings - User"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"file cl",
+				"File: Close All"
+			],
+			[
+				"file clo",
+				"File: Close All"
+			],
+			[
+				"side bar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"file cla",
+				"File: Close All"
+			],
+			[
+				"side b",
+				"View: Toggle Side Bar"
+			],
+			[
+				"ssyn js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"proje",
+				"Project: Add Folder"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"keybind",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"keys",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"packa inst",
+				"Package Control: Install Package"
+			],
+			[
+				"seting de",
+				"Preferences: Settings - Default"
+			],
+			[
+				"setting us",
+				"Preferences: Settings - User"
+			],
+			[
+				"toggle ta",
+				"View: Toggle Tabs"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/bdelespierre/Laboratory/disillusion/disillusion.php",
+		"/home/bdelespierre/Laboratory/underscore.php/underscore.php.sublime-project",
+		"/home/bdelespierre/Laboratory/underscore.php/lib/Underscore.php",
+		"/home/bdelespierre/Laboratory/underscore.php/lib/Bridge.php",
+		"/home/bdelespierre/Laboratory/underscore.php/doxygen/examples/collection.php",
+		"/home/bdelespierre/Laboratory/underscore.php/docs/Bridge.html",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/test.php",
+		"/home/bdelespierre/Laboratory/underscore.php/doc.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/units/collection.php",
+		"/home/bdelespierre/Laboratory/underscore.php/composer.json",
+		"/home/bdelespierre/Laboratory/underscore.php/vendor/autoload.php",
+		"/home/bdelespierre/Laboratory/underscore.php/.gitignore",
+		"/home/bdelespierre/Laboratory/underscore.php/vendor/composer/autoload_real.php",
+		"/home/bdelespierre/Laboratory/underscore.php/test/UnderscoreMock.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/units/function.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/units/utility.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/units/object.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/units/chaining.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/units/array.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/bootstrap.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/phoebe.php",
+		"/home/bdelespierre/Laboratory/underscore.php/lib/Underscore53.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/utility.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/collection.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/array.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/function.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/object.php",
+		"/home/bdelespierre/Laboratory/underscore.php/tests/chaining.php",
+		"/home/bdelespierre/Laboratory/2.html",
+		"/home/bdelespierre/Laboratory/1.html",
+		"/home/bdelespierre/Laboratory/diff.html",
+		"/home/bdelespierre/Laboratory/wamp.php",
+		"/home/bdelespierre/Laboratory/falcon/app/views/index/index.phtml",
+		"/home/bdelespierre/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/bdelespierre/Laboratory/falcon/public/index.php",
+		"/home/bdelespierre/Laboratory/falcon/app/controllers/IndexController.php",
+		"/home/bdelespierre/Laboratory/falcon/app/views/index.phtml",
+		"/home/bdelespierre/Laboratory/falcon/public/.htaccess",
+		"/home/bdelespierre/Laboratory/falcon/.htaccess",
+		"/home/bdelespierre/Laboratory/falcon/app/views",
+		"/home/bdelespierre/Laboratory/falcon/app/controllers",
+		"/home/bdelespierre/Laboratory/falcon/app/models",
+		"/home/bdelespierre/Laboratory/falcon/public/css",
+		"/home/bdelespierre/Workspace/requirejs/app/scripts/vendor",
+		"/home/bdelespierre/Workspace/requirejs/app/scripts/index.html",
+		"/home/bdelespierre/Workspace/requirejs/.bowerrc",
+		"/home/bdelespierre/Workspace/ccmbusiness/application_business/scripts/config/CCMConfig.php",
+		"/home/bdelespierre/Workspace/copainsdavantv4/application/scripts/event/EventOwner.php",
+		"/home/bdelespierre/Workspace/ccmbase/ccmbase/framework/ccmloader.php",
+		"/home/bdelespierre/Workspace/copainsdavantv4/application_business/scripts/user/UserAuth.php",
+		"/home/bdelespierre/Workspace/ccmconf/www.copainsdavant.com.php",
+		"/home/bdelespierre/vhost_1",
+		"/home/bdelespierre/diff_vhost_1_2",
+		"/home/bdelespierre/vhost_2",
+		"/home/bdelespierre/Workspace/ccmconf/devbox.default.php",
+		"/home/bdelespierre/Workspace/ccmcms/application/model/feed/FeedMapper.php",
+		"/home/bdelespierre/Workspace/ccmcms/application/controllers/install_controller.php",
+		"/home/bdelespierre/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/bdelespierre/Workspace/foo/bar",
+		"/home/bdelespierre/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/bdelespierre/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/bdelespierre/Workspace",
+			"/home/bdelespierre/Workspace/ccmbase",
+			"/home/bdelespierre/Workspace/copainsdavantv4"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"((    //.*\\n)+    public function (\\w+))",
+			"((    //.*\\n)+    protected static function (\\w+))",
+			"((    //.*\\n)+    public static function (\\w+))",
+			"object funct",
+			"functions",
+			"    // @.*",
+			"    //( @|\\s)$",
+			"    ///\\s",
+			"^\\s+/\\*\\*",
+			"^     //",
+			"     //",
+			"^\\s*/\\*\\*",
+			"^\\s*(/\\*\\*|///)",
+			" */\\*\\*",
+			"^( +)\\*",
+			"^( *)/?/*+/?",
+			"^(\\s*)/?\\*+/?",
+			"collection\\s+\\$list",
+			"collection  $list",
+			"_isList",
+			"_getItem",
+			"_setItem",
+			"describe(\"",
+			"[]",
+			"protected static function",
+			"[]",
+			" [",
+			"protected static function",
+			"static::",
+			"_isSequence",
+			"display_errors",
+			"var_dum",
+			"define.*SITE_URL",
+			"define(\\s*('|\")?SITE_URL",
+			"define(\\s*('|\"|)SITE_URL",
+			"_registerNamespace",
+			"spl_autoload_reg",
+			"autolo",
+			"session_handler",
+			"margin"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"    // ### $3\\n$1",
+			"",
+			"    //",
+			"",
+			"$1//",
+			"//",
+			"\niterable \\$list",
+			"iterable    $list",
+			"_isIterable",
+			"_get",
+			"_set",
+			"describe(\"The ",
+			"public static function",
+			"Underscore::",
+			"_isList"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"undersc",
+				"lib/Underscore.php"
+			],
+			[
+				"unders",
+				"underscore.php.sublime-project"
+			],
+			[
+				"un",
+				"lib/Underscore.php"
+			],
+			[
+				"test",
+				"tests/test.php"
+			],
+			[
+				"brid",
+				"lib/Bridge.php"
+			],
+			[
+				"under",
+				"lib/Underscore.php"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				"boost",
+				"tests/bootstrap.php"
+			],
+			[
+				"inde",
+				"public/index.php"
+			],
+			[
+				"index.",
+				"public/index.php"
+			],
+			[
+				"ccmprofil",
+				"ccmbase/ccmbase/ccmprofiler.php"
+			],
+			[
+				"ccmloader.php",
+				"ccmbase/ccmbase/framework/ccmloader.php"
+			],
+			[
+				"ccmconf.class",
+				"ccmbase/ccmbase/conf/ccmconf.class.php"
+			],
+			[
+				"ccmconfi",
+				"ccmbusiness/application_business/scripts/config/CCMConfig.php"
+			],
+			[
+				"eventowne",
+				"copainsdavantv4/application/scripts/event/EventOwner.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/bdelespierre/Laboratory/Phoebe/phoebe.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true
+}
