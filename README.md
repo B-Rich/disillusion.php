@@ -6,9 +6,7 @@ _The lightest PHP testing framework on earth and beyond_
 <?php 
 require_once "disillusion.php";
 
-expectation("something");
-
-reality($something);
+expectation("something") && reality($something);
 ```
 
 ## Concept
