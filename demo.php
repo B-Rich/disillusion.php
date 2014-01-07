@@ -16,6 +16,7 @@ expectation(1);
 reality($value);
 
 // Will display
+
 // > Reality defined at line 16 doesn't match expectation from line 13
 
 // However, reality that match expectation won't display anything:
@@ -39,7 +40,9 @@ reality(1);
 reality(0);
 
 // Will display
-// > Nothing is expected at line 39
+
+// > Nothing is expected at line 40
+
 // because we stacked too few expectations 
 
 // Works with functions
@@ -54,7 +57,8 @@ reality(function () {
 });
 
 // Will display
-// > Reality defined at line 52 doesn't match expectation from line 48
+
+// > Reality defined at line 55 doesn't match expectation from line 51
 
 // Works with multiple value
 // -------------------------
@@ -64,5 +68,7 @@ expectation(1,2,3);
 reality(1,3,2);
 
 // The above example will display
-// > Reality defined at line 64 doesn't match expectation from line 62
+
+// > Reality defined at line 68 doesn't match expectation from line 67
+
 // because __order counts__.
