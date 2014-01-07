@@ -1,6 +1,6 @@
 # Disillusion.php
 
-_The lightest PHP testing framework_
+_The lightest PHP testing framework on earth and beyond_
 
 ```PHP
 <?php 
