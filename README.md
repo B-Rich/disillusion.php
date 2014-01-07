@@ -2,6 +2,15 @@
 
 _The lightest PHP testing framework_
 
+```PHP
+<?php 
+require_once "disillusion.php";
+
+expectation("something");
+
+reality($something);
+```
+
 ## Concept
 
 Expectation and reality are the core concept in any testing framework regardless its philosophy. With Disillusion.php, I made the choice to keep these aspects and these only. Which mean you only have 2 functions at your disposal:
