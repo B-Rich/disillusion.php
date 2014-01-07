@@ -133,6 +133,9 @@ reality&#39;s parameters doesn&#39;t match expectation, returns false and displa
             </div>
             
             <div class="content"><div class='highlight'><pre><span class="function"><span class="keyword">function</span> <span class="title">reality</span> <span class="params">()</span> {</span>
+    <span class="keyword">static</span> <span class="variable">$eol</span>;
+    !<span class="keyword">isset</span>(<span class="variable">$eol</span>) &amp;&amp; <span class="variable">$eol</span> = (PHP_SAPI == <span class="string">'cli'</span> ? <span class="string">"\n"</span> : <span class="string">"&lt;br /&gt;"</span>);
+
     <span class="keyword">if</span> (!func_num_args())
         <span class="keyword">return</span> <span class="keyword">true</span>;</pre></div></div>
             
@@ -199,7 +202,7 @@ reality&#39;s parameters doesn&#39;t match expectation, returns false and displa
             </div>
             
             <div class="content"><div class='highlight'><pre>    <span class="keyword">if</span> (<span class="keyword">empty</span>(<span class="variable">$expectation</span>)) {
-        <span class="keyword">echo</span> <span class="string">"Nothing is expected at line {$line}\n"</span>;
+        <span class="keyword">echo</span> <span class="string">"Nothing is expected at line {$line}{$eol}"</span>;
         <span class="keyword">return</span> <span class="keyword">false</span>;
     }</pre></div></div>
             
@@ -232,8 +235,7 @@ reality&#39;s parameters doesn&#39;t match expectation, returns false and displa
             </div>
             
             <div class="content"><div class='highlight'><pre>        <span class="keyword">if</span> (!<span class="keyword">isset</span>(<span class="variable">$expectation</span>[<span class="string">'args'</span>][<span class="variable">$offset</span>]) || <span class="variable">$expectation</span>[<span class="string">'args'</span>][<span class="variable">$offset</span>] != <span class="variable">$arg</span>) {
-            <span class="keyword">echo</span> <span class="string">"Reality defined at line {$line} doesn't match expectation from line {$expectation['line']}"</span>,
-                 (PHP_SAPI == <span class="string">'cli'</span> ? <span class="string">"\n"</span> : <span class="string">"&lt;br /&gt;"</span>);
+            <span class="keyword">echo</span> <span class="string">"Reality defined at line {$line} doesn't match expectation from line {$expectation['line']}{$eol}"</span>;
             <span class="keyword">return</span> <span class="keyword">false</span>;
         }
     }
